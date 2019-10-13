@@ -1,0 +1,426 @@
+/*
+
+      _       __             _ _       
+   __| | ___ / _| __ _ _   _| | |_ ___ 
+  / _` |/ _ \ |_ / _` | | | | | __/ __|
+ | (_| |  __/  _| (_| | |_| | | |_\__ \
+  \__,_|\___|_|  \__,_|\__,_|_|\__|___/
+
+Here we set some default values for the HTML elements in our web page, such as color, font size, font family and more. This makes it very easy to make site-wide changes quickly.
+
+The strange-looking characters below (such as #51237f) are hex values, which are how computers refer to color. We'll cover these in more detail as well as the handful of generic colors avilable to use (black, blue, white, brown, etc.)                         
+*/
+
+:root { /* Start setting default values for your document */
+
+ --color1: #369;/*blue*/
+ --color2: gold;
+ --color3: #7a4119;
+
+ --gray-light: #f0f0f0; /**/ 
+ --gray-medium: #aaa; /**/  
+ --gray-dark: #666; /**/  
+
+ } /*End setting default values for your document */
+
+
+
+
+
+ html
+ {
+   font-size: 16px; /* Here is where we set the "rem" value for the whole page. 
+
+   "Rem" refers to the default size we use.
+
+   In this case 1rem = 16 pixels, therefore 1.5rem = 24 pixels, 2rem = 32 pixels, etc. */
+ }
+
+ body
+ {
+   color: black;
+   background-color: var(--gray-light);
+   background:var(--gray-light)  url(../images/img-noise-361x370.png) repeat;
+   font-family: 'Muli', sans-serif;
+ }
+
+
+
+
+
+/* 
+  _     _ 
+ | |__ / |
+ | '_ \| |
+ | | | | |
+ |_| |_|_|
+
+ */
+
+ div.main-content h1
+ {
+ 	color: white;
+ 	font-size: 2rem;
+ }
+
+ h1.main-headline
+ {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  padding-top: 4rem;
+}
+
+div.second-ad-container h1, div.third-ad-container h1
+{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-family: 'Heebo', sans-serif;
+  text-transform: uppercase;
+  color: var(--color3);
+}
+
+h1.the-headline
+{
+  animation-duration: .75s; /*how long the element's animation lasts*/
+  animation-delay: .3s; /*when the element's animation starts*/
+}
+
+
+/*
+  _     ____  
+ | |__ |___ \ 
+ | '_ \  __) |
+ | | | |/ __/ 
+ |_| |_|_____|
+             
+ */
+
+ h2
+ {
+  color: #ffffff; /* hexidecimal (hex) code for white */
+  font-weight: 300; /*makes it thin*/
+  margin-top: 2rem;
+}
+
+
+
+
+/*
+                                              _         
+  _ __   __ _ _ __ __ _  __ _ _ __ __ _ _ __ | |__  ___ 
+ | '_ \ / _` | '__/ _` |/ _` | '__/ _` | '_ \| '_ \/ __|
+ | |_) | (_| | | | (_| | (_| | | | (_| | |_) | | | \__ \
+ | .__/ \__,_|_|  \__,_|\__, |_|  \__,_| .__/|_| |_|___/
+ |_|                    |___/          |_|              
+
+ */
+
+ p
+ {
+ 	font-size: 1rem;
+ 	line-height: 1.25rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+
+p.company-name
+{
+  font-family: 'Merriweather', serif;
+  font-size: .7rem;
+  line-height: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem ;
+  position: absolute;
+  top: 587px;
+  left: 38px;
+  color: black;
+  font-weight: 700;
+}
+
+p.company-url
+{
+  position: absolute;
+  top: 607px;
+  left: 9rem;
+  color: var(--color2);
+}
+
+p.url
+{
+  text-align: right;
+  color: black;
+  font-weight: 700;
+  padding-top: 12px;
+}
+
+p.callout-text
+{
+  text-align: right;
+  margin-top: 1rem;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #7d7e7f;
+}
+
+
+
+/*                  _        _                     
+   ___ ___  _ __ | |_ __ _(_)_ __   ___ _ __ ___ 
+  / __/ _ \| '_ \| __/ _` | | '_ \ / _ \ '__/ __|
+ | (_| (_) | | | | || (_| | | | | |  __/ |  \__ \
+  \___\___/|_| |_|\__\__,_|_|_| |_|\___|_|  |___/
+
+Mostly we use DIVs to hold or contain our content.                                                 
+*/
+
+div
+{
+  border: 1px gray solid;x
+}
+
+div.jumbotron {
+ background:var(--color1)  url(../images/bg-02.jpg) repeat-x;
+ min-height: 673px;
+ max-width: ;
+ padding-top: 0;
+}
+
+div#the-content
+{
+ border: 1px solid #ccc;
+ margin-top: 3rem;
+ padding: 2rem;
+ background-color: white;
+}
+
+div.bottle
+{
+  position: absolute; 
+  left: 31rem;
+  bottom: 3rem;
+}
+
+div.big-dot
+{
+  position: absolute;
+  top: 36rem;
+}
+
+div.second-ad-container, div.third-ad-container
+{
+  max-width: 580px;
+  border: 1px solid var(--gray-medium);
+  padding: 0rem 1rem 1rem 1rem;
+  background-color: #e8dfd3;
+  /*background:#e8dfd3  url(../images/img-noise-361x370.png) repeat;*/
+}
+
+div.third-ad-container
+{
+  margin-top: 2rem;
+}
+
+div.bg
+{  
+  position: relative;
+  min-height: 442px;
+  border: 0px solid #ccc;
+  margin-top: 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background:var(--color1)  url(../images/girl-on-chair.jpg)  no-repeat;
+}
+
+div.main-text
+{
+  position: absolute;
+  left: 3rem;
+  padding-left: 1rem;
+  padding-right: 14rem;
+  border-left: .2rem var(--color2) solid;
+}
+
+div.logo-container
+{
+  position: relative;
+}
+
+div.social
+{
+  text-align: right;
+}
+
+div#map
+{
+  margin-top: 1rem;
+  max-width: ;
+  height: 462px;
+}
+
+
+/*
+  _                                 
+ (_)_ __ ___   __ _  __ _  ___  ___ 
+ | | '_ ` _ \ / _` |/ _` |/ _ \/ __|
+ | | | | | | | (_| | (_| |  __/\__ \
+ |_|_| |_| |_|\__,_|\__, |\___||___/
+                    |___/ 
+
+*/
+
+img.logo
+{
+  float: none;
+  display: block;
+  margin:  1rem;
+  padding-left: 4rem;
+  animation-duration: .75s; /*how long the element's animation lasts*/
+  animation-delay: .3s; /*when the element's animation starts*/
+}
+
+img.logo2
+{
+  padding: .25rem;
+  max-width: 11rem;
+  height: auto;
+}
+
+
+div.social img
+{
+  margin-top: 6px;
+  background-color: rgba(255,255,255,.8);
+}
+
+img.thumbnail
+{
+  width: 100%;
+  height: 100px;
+  margin:  1rem;
+}
+
+
+
+
+/*
+  _ _       _        
+ | (_)_ __ | | _____ 
+ | | | '_ \| |/ / __|
+ | | | | | |   <\__ \
+ |_|_|_| |_|_|\_\___/               
+ */
+
+ p.url a
+ {
+  color: black;
+}
+
+ div.third-ad-container p.url a
+ {
+  color: var(--gray-medium);
+}
+
+
+
+
+/***
+ *      _      _     _       
+ *     | |    (_)   | |      
+ *     | |     _ ___| |_ ___ 
+ *     | |    | / __| __/ __|
+ *     | |____| \__ \ |_\__ \
+ *     |______|_|___/\__|___/
+ *                           
+ *        Unordered Lists                   
+ */
+
+
+ ul
+ {
+
+ }
+
+
+
+ li
+ {
+
+ }
+
+
+
+
+
+/*
+        _   _ _ _ _         
+  _   _| |_(_) (_) |_ _   _ 
+ | | | | __| | | | __| | | |
+ | |_| | |_| | | | |_| |_| |
+  \__,_|\__|_|_|_|\__|\__, |
+                      |___/ 
+*/
+.drop-shadow
+{
+  -webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,.8));    
+}
+
+.rotate
+{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+transform: rotate(0deg);/* change this one til it's how you want, then change that number for the others just above.
+
+Why? Browser compatibility. We want to make sure this particular code works in the browsers which suppport its features */ 
+}
+
+
+span
+{
+  font-style: italic;
+}
+
+span.dot {
+  height: 5rem;
+  width: 5rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  text-align:center;
+  border: 1rem white solid;
+}
+
+iframe
+{
+  width: 90%;
+  height: 444px;
+}
+
+
+/*GRADIENTS generated from https://www.colorzilla.com/gradient-editor/ */
+
+div.corporate-motto-bg-1
+{
+  background: #df5d42; /* Old browsers */
+  background: -moz-linear-gradient(left,  #df5d42 0%, #bc0b05 63%, #fc2407 98%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #df5d42 0%,#bc0b05 63%,#fc2407 98%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #df5d42 0%,#bc0b05 63%,#fc2407 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df5d42', endColorstr='#fc2407',GradientType=1 ); /* IE6-9 */}
+
+div.corporate-motto-bg-2
+{
+ background: #fc2407; /* Old browsers */
+ background: -moz-linear-gradient(left,  #fc2407 2%, #bc0b05 37%, #df5d42 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(left,  #fc2407 2%,#bc0b05 37%,#df5d42 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to right,  #fc2407 2%,#bc0b05 37%,#df5d42 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc2407', endColorstr='#df5d42',GradientType=1 ); /* IE6-9 */
+}
+
+
