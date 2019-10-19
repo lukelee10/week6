@@ -181,7 +181,7 @@ Mostly we use DIVs to hold or contain our content.
 
 div
 {
-  border: 1px gray solid;x
+  /*border: 1px gray solid;x */
 }
 
 div.jumbotron {
@@ -262,6 +262,15 @@ div#map
   height: 462px;
 }
 
+div.grad
+{
+  background-image: linear-gradient(#951cd6, #c7a0db);
+}
+
+div.grad2
+{
+  background-image: linear-gradient(#c7a0db, #951cd6);
+}
 
 /*
   _                                 
