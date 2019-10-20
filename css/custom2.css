@@ -445,3 +445,32 @@ div.corporate-motto-bg-2
   width: 100%;
   padding: 10px;
 }
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 30%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+}
+
+#Washington {background-color: red;}
+#Toronto {background-color: green;}
+#Los-Angeles {background-color: blue;}
