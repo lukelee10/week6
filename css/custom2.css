@@ -417,7 +417,7 @@ iframe.video
 
 iframe.map
 {
-  width: auto;
+  width: cover;
   height: 600px;
 }
 
