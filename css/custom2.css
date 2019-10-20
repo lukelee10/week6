@@ -105,12 +105,6 @@ h1.the-headline
   margin-top: 2rem;
 }
 
-/* background */
-body {
-  background-image: url("../images/pizza-bg.gif");
-  background-repeat: repeat;
-  background-size: 5%  
-}
 
 /*
                                               _         
@@ -415,12 +409,17 @@ span.dot {
   border: 1rem white solid;
 }
 
-iframe
+iframe.video
 {
   width: 100%;
   height: 100%;
 }
 
+iframe.map
+{
+  width: auto;
+  height: 600px;
+}
 
 /*GRADIENTS generated from https://www.colorzilla.com/gradient-editor/ */
 
