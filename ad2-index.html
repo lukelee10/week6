@@ -88,34 +88,35 @@ The metadata can be used by browsers (how to display content or reload page), se
       <!DOCTYPE HTML>
       <div class="col-md-12">
         <head>
+          
+            window.onload = function() {
+
+              var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                  text: "The results after they used it."
+                },
+                data: [{
+                  type: "pie",
+                  startAngle: 240,
+                  yValueFormatString: "##0.00\"%\"",
+                  indexLabel: "{label} {y}",
+                  dataPoints: [
+                    {y: 80.5, label: "Happy"},
+                    {y: 8.5, label: "Satisfied"},
+                          {y: 1.5, label: "Full of purpose"}
+                  ]
+                }]
+              });
+              chart.render();
+
+            }
           <script>
-          window.onload = function() {
-
-            var chart = new CanvasJS.Chart("chartContainer", {
-              animationEnabled: true,
-              title: {
-                text: "The results after they used it."
-              },
-              data: [{
-                type: "pie",
-                startAngle: 240,
-                yValueFormatString: "##0.00\"%\"",
-                indexLabel: "{label} {y}",
-                dataPoints: [
-                  {y: 80.5, label: "Happy"},
-                  {y: 8.5, label: "Satisfied"},
-                        {y: 1.5, label: "Full of purpose"}
-                ]
-              }]
-            });
-            chart.render();
-
-          }
           </script>
         </head>
       </div>
 
-      
+
         <body>
         <div id="chartContainer" style="height: 370px; width: 100%;"></div>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
@@ -175,8 +176,8 @@ The metadata can be used by browsers (how to display content or reload page), se
         </script>
            
         </body>
-   </div>
-<h1>This website is sponsored by the movie, <a href="file:///Volumes/COLEGWORK/WebDev/project2/ad2-index.html" target="_blank">Mr. Spaghetti: Dangerous Maze</a></h1>
+    </div>
+  <h1>This website is sponsored by the movie, <a href="file:///Volumes/COLEGWORK/WebDev/project2/ad2-index.html" target="_blank">Mr. Spaghetti: Dangerous Maze</a></h1>
 
 
 </div> <!-- /container -->
