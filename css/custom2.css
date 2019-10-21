@@ -474,3 +474,15 @@ div.corporate-motto-bg-2
 #Washington {background-color: red;}
 #Toronto {background-color: green;}
 #Los-Angeles {background-color: blue;}
+
+@media only screen and (min-width: 769px) {
+  .tablet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
