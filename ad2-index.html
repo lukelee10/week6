@@ -2,210 +2,151 @@ second<!DOCTYPE html>
 
 <html lang="en">
 
-<head> <!-- start the head -->
+    <head> <!-- start the head -->
 
-<!-- The <meta> tag (seen below) provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+    <!-- The <meta> tag (seen below) provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
 
-Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+    Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
 
-The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. -->
+    The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services. -->
 
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sic enim censent, oportunitatis esse beate vivere. Quid autem habent admirationis, cum prope accesseris.">
+    <meta name="author" content="John Smith">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- here's the bookmark icon for the page -->
+    <link rel="icon" href="images/favicon-32x32.png">
 
-<meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sic enim censent, oportunitatis esse beate vivere. Quid autem habent admirationis, cum prope accesseris.">
+    <!-- the page title -->
+    <title>TECH-272: Week 6 Template</title>
 
-<meta name="author" content="John Smith">
+    <!-- here we load the Bootstrap core CSS - don't move or delete this line -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:900|Open+Sans&display=swap" rel="stylesheet">
+    <!-- NEW | here we load a library called animate.css for basic HTML+CSS animations in the ads below -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" rel="stylesheet">
 
-<!-- here's the bookmark icon for the page -->
-<link rel="icon" href="images/favicon-32x32.png">
+    <!-- now for your custom CSS loaded *after* the bootstrap CSS and google fonts are loaded, above-->
+    <link href="css/custom2.css" rel="stylesheet">
 
-<!-- the page title -->
-<title>TECH-272: Week 6 Template</title>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        window.onload = function() {
 
-<!-- here we load the Bootstrap core CSS - don't move or delete this line -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+              text: "The results after they used it."
+            },
+            data: [{
+              type: "pie",
+              startAngle: 240,
+              yValueFormatString: "##0.00\"%\"",
+              indexLabel: "{label} {y}",
+              dataPoints: [
+                {y: 80.5, label: "Happy"},
+                {y: 8.5, label: "Satisfied"},
+                      {y: 1.5, label: "Full of purpose"}
+              ]
+            }]
+          });
+          chart.render();
+        }
+      </script>
 
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300,600&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css?family=Heebo:900|Open+Sans&display=swap" rel="stylesheet">
-
-<!-- NEW | here we load a library called animate.css for basic HTML+CSS animations in the ads below -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" rel="stylesheet">
-
-<!-- now for your custom CSS loaded *after* the bootstrap CSS and google fonts are loaded, above-->
-<link href="css/custom2.css" rel="stylesheet">
-
-</head>
-
-
-
+    </head>
 <body class="">
 
   <div id="the-content" class="container">
-
-   <div class="row grad animated bounceInLeft">
-
-    <div class="col-sm-6 col-md-6">
-
-      <div class="col-sm-6 col-md-12">
-        <img src="images/lemono logo.png" class="logo-container" alt="Italian Trulli">
-      </div>
-      <div class="col-sm-6 col-md-12">
-        <p>Turning your life, unsour. </p>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-6">
-      <img src="images/png-medicine-bottle-pill-bottle-600.png" class="logo-container" alt="Italian Trulli">
-    </div>
-
-   </div><!-- /row -->
-
-
-   <div class="row ">
-
-    <div class="col-md-2">
-    </div>
-
-    <div class="col-md-8">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="col-md-2">
-    </div>
-
-   </div><!-- /row -->
-
-   <div class="row grad2">
-
-    <div class="col-sm-6 col-md-6">
-      <h2>18k people have used this. </h2>
-    </div>
-
-    <div class="col-sm-6 col-md-6">
-      <!DOCTYPE HTML>
-      <div class="col-md-12">
-        <head>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <script>
-            window.onload = function() {
-
-              var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                title: {
-                  text: "The results after they used it."
-                },
-                data: [{
-                  type: "pie",
-                  startAngle: 240,
-                  yValueFormatString: "##0.00\"%\"",
-                  indexLabel: "{label} {y}",
-                  dataPoints: [
-                    {y: 80.5, label: "Happy"},
-                    {y: 8.5, label: "Satisfied"},
-                          {y: 1.5, label: "Full of purpose"}
-                  ]
-                }]
-              });
-              chart.render();
-
-            }
-          </script>
-        </head>
+    <div class="row grad animated bounceInLeft">
+      <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6 col-md-12">
+          <img src="images/lemono logo.png" class="logo-container" alt="Italian Trulli">
+        </div>
+        <div class="col-sm-6 col-md-12">
+          <p>Turning your life, unsour. </p>
+        </div>
       </div>
 
+      <div class="col-sm-6 col-md-6">
+        <img src="images/png-medicine-bottle-pill-bottle-600.png" class="logo-container" alt="Italian Trulli">
+      </div>
+    </div><!-- /row -->
 
-        <body>
-        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        </body>
 
-            </div>
+    <div class="row ">
+      <div class="col-md-2">
+      </div>
 
-           </div>
+      <div class="col-md-8">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 
-           <div class="row animated bounceInRight">
+      <div class="col-md-2">
+      </div>
 
-            <div class="col-md-12">
-              <h1>Trusted in these locations.</h1>
-            </div>
-            
+    </div><!-- /row -->
 
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="row grad2">
 
-        </head>
-        <body>
+      <div class="col-sm-6 col-md-6">
+        <h2>18k people have used this. </h2>
+      </div>
 
-        <button class="tablink" onclick="openPage('Washington', this, 'red')">Washington</button>
-        <button class="tablink" onclick="openPage('Toronto', this, 'green')" id="defaultOpen">Toronto</button>
-        <button class="tablink" onclick="openPage('Los-Angeles', this, 'blue')">Los Angeles</button>
+      <div class="col-sm-6 col-md-6">
+          <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+      </div>
+    </div><!-- /row -->
 
-        <div id="Washington" class="tabcontent">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99370.36297093317!2d-77.08461580023939!3d38.89370913967648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC!5e0!3m2!1sen!2sus!4v1571508386121!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
-        </div>
+    <div class="row animated bounceInRight">
 
-        <div id="Toronto" class="tabcontent">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80858344134!2d-79.51814105054963!3d43.718403810977776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1571508430779!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
-        </div>
+       <div class="col-md-12">
+        <h1>Trusted in these locations.</h1>
 
-        <div id="Los-Angeles" class="tabcontent">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d300233.19124883635!2d-118.23484423090969!3d34.02609846969616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1571508471347!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
-        </div>
+          <button class="tablink" onclick="openPage('Washington', this, 'red')">Washington</button>
+          <button class="tablink" onclick="openPage('Toronto', this, 'green')" id="defaultOpen">Toronto</button>
+          <button class="tablink" onclick="openPage('Los-Angeles', this, 'blue')">Los Angeles</button>
 
-        <script>
-        function openPage(pageName,elmnt,color) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-          }
-          document.getElementById(pageName).style.display = "block";
-          elmnt.style.backgroundColor = color;
-        }
+          <div id="Washington" class="tabcontent">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99370.36297093317!2d-77.08461580023939!3d38.89370913967648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC!5e0!3m2!1sen!2sus!4v1571508386121!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+          </div>
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-        </script>
-           
-        </body>
+          <div id="Toronto" class="tabcontent">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80858344134!2d-79.51814105054963!3d43.718403810977776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sus!4v1571508430779!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+          </div>
+
+          <div id="Los-Angeles" class="tabcontent">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d300233.19124883635!2d-118.23484423090969!3d34.02609846969616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1571508471347!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+          </div>
+      </div>
+    </div><!-- /row -->
+    <div class="row ">
+      <h1>This website is sponsored by the movie, <a href="file:///Volumes/COLEGWORK/WebDev/project2/ad2-index.html" target="_blank">Mr. Spaghetti: Dangerous Maze</a></h1>
     </div>
-  <h1>This website is sponsored by the movie, <a href="file:///Volumes/COLEGWORK/WebDev/project2/ad2-index.html" target="_blank">Mr. Spaghetti: Dangerous Maze</a></h1>
-
-
 </div> <!-- /container -->
 
 
+<!-- screen logic goes here-->
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
 
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 <!-- As usual, these Bootstrap and jQuery JavaScript files get loaded at the bottom of the document, right above where the "body" tag is closed, below. -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
