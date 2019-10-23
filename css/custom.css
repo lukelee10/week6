@@ -41,7 +41,7 @@ The strange-looking characters below (such as #51237f) are hex values, which are
    color: black;
    background-color: var(--gray-light);
    background:var(--gray-light)  url(../images/img-noise-361x370.png) repeat;
-   font-family: 'Muli', sans-serif;
+   font-family: 'Oswald', sans-serif;
  }
 
 
@@ -89,6 +89,11 @@ h1.the-headline
 }
 
 
+h1
+{
+  font-family: 'Special Elite', cursive;
+}
+
 /*
   _     ____  
  | |__ |___ \ 
@@ -103,6 +108,16 @@ h1.the-headline
   color: #ffffff; /* hexidecimal (hex) code for white */
   font-weight: 300; /*makes it thin*/
   margin-top: 2rem;
+}
+
+h2
+{
+  font-family: 'Special Elite', cursive;
+}
+
+h3
+{
+  font-family: 'Special Elite', cursive;
 }
 
 /* background */
