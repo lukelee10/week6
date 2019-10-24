@@ -88,6 +88,10 @@ h1.the-headline
   animation-delay: .3s; /*when the element's animation starts*/
 }
 
+h1
+{
+  font-family: impact;
+}
 
 /*
   _     ____  
@@ -105,6 +109,15 @@ h1.the-headline
   margin-top: 2rem;
 }
 
+h2
+{
+  font-family: impact;
+}
+
+h3
+{
+  font-family: impact;
+}
 
 /*
                                               _         
@@ -115,6 +128,11 @@ h1.the-headline
  |_|                    |___/          |_|              
 
  */
+
+p
+{
+  font-family: georgia;
+}
 
  p
  {
@@ -201,7 +219,7 @@ div.bottle
 {
   position: absolute; 
   left: 31rem;
-  bottom: 3rem;
+  bottom: -3rem;
 }
 
 div.big-dot
@@ -262,12 +280,12 @@ div#map
 
 div.grad
 {
-  background-image: linear-gradient(#951cd6, #c7a0db);
+  background-image: linear-gradient(#F0F82C, #888C24);
 }
 
 div.grad2
 {
-  background-image: linear-gradient(#c7a0db, #951cd6);
+  background-image: linear-gradient(#888C24, #F0F82C);
 }
 
 div.grad3
@@ -354,7 +372,7 @@ img.thumbnail
 
  ul
  {
-
+  color: black;
  }
 
 

@@ -94,6 +94,13 @@ h1
   font-family: 'Special Elite', cursive;
 }
 
+h1.char1
+{
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+
 /*
   _     ____  
  | |__ |___ \ 
@@ -223,6 +230,20 @@ div.bottle
   position: absolute; 
   left: 31rem;
   bottom: 3rem;
+}
+
+div.bottle-spag
+{
+  position: absolute; 
+  right: 30rem;
+  bottom: 8rem;
+}
+
+div.bottle-chef
+{
+  position: absolute; 
+  left: 50rem;
+  bottom: 8rem;
 }
 
 div.big-dot
